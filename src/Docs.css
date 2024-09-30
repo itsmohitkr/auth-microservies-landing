@@ -1,0 +1,59 @@
+.docs-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light background for documentation */
+    border-radius: 10px;
+}
+
+/* Individual API endpoint styling */
+.api-endpoint {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    /* Light border around each endpoint */
+    border-radius: 8px;
+    background-color: white;
+    /* White background for endpoints */
+}
+
+.api-endpoint h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4CAF50;
+    /* Green for endpoint headings */
+}
+
+.api-endpoint p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Code block styling */
+.code-block {
+    background-color: #000;
+    /* Black background for code */
+    color: #00ff00;
+    /* Green text color for code */
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    /* Preserve whitespace for formatting */
+}
+
+/* Status code styling */
+.status-code {
+    font-weight: bold;
+}
+
+.status-code.green {
+    color: #4CAF50;
+    /* Green for success status codes */
+}
+
+.status-code.red {
+    color: red;
+    /* Red for error status codes */
+}

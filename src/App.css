@@ -1,0 +1,157 @@
+/* App container styling */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Section 1: Welcome message */
+.welcome-section {
+    margin-bottom: 50px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Section 2: Text and Form */
+.form-section {
+    display: flex;
+    background-color: #4CAF50;
+    /* Green background for the left side */
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/* Left text section styling */
+.text-left {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.text-left h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.text-left p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Right form section styling */
+.form-right {
+    flex: 1;
+    background-color: white;
+    /* White background for the form */
+    padding: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-right h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Documentation Section */
+.docs-section {
+    margin-top: 50px;
+}
+
+.docs-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Individual API endpoint styling */
+.api-endpoint {
+    margin-bottom: 30px;
+}
+
+.api-endpoint h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4CAF50;
+    /* Heading color */
+}
+
+.api-endpoint p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Code block styling */
+.code-block {
+    background-color: #000;
+    /* Black background for code */
+    color: #00ff00;
+    /* Green text color for code */
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Status code styling */
+.status-code {
+    font-weight: bold;
+}
+
+.status-code.green {
+    color: #4CAF50;
+    /* Green for success status codes */
+}
+
+.status-code.red {
+    color: red;
+    /* Red for error status codes */
+}
