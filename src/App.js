@@ -9,6 +9,7 @@ function App() {
   const [appName, setAppName] = useState("");
   const [message, setMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // New state to manage button loading state
 
   // Function to handle form submission
   const handleSubmit = async (event) => {
@@ -19,7 +20,9 @@ function App() {
       name,
       app_name: appName,
       email: email,
-    };    
+    };
+
+    setIsLoading(true); // Set loading to true when request starts
 
     try {
       const response = await fetch(
@@ -62,6 +65,8 @@ function App() {
       setTimeout(() => {
         setMessage("");
       }, 3000);
+    } finally {
+      setIsLoading(false); // Set loading to false after the request completes
     }
   };
 
@@ -121,7 +126,10 @@ function App() {
                 onChange={(e) => setAppName(e.target.value)}
               />
             </div>
-            <button type="submit">Request Access to API</button>
+            {/* Disable the button if the request is in progress */}
+            <button type="submit" disabled={isLoading}>
+              {isLoading ? "Submitting..." : "Request Access to API"}
+            </button>
           </form>
           {/* Success/Error Message */}
           {message && (
