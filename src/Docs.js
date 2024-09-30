@@ -9,6 +9,9 @@ function Docs() {
         Note: All requests to the authentication microservices require an
         <strong> x-api-key</strong> in the headers.
       </p>
+      <p>
+        Base URL: <strong>https://devplanet.online</strong>
+      </p>
 
       {/* API Endpoint 1 */}
       <div className="api-endpoint">
